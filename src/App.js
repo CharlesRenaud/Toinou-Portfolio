@@ -1,15 +1,16 @@
 import React from "react";
+import Header from "./components/Header"
 import AboutUs from "./pages/AboutUs";
 import GlobalStyle from "./components/GlobalStyle"
-import {Title} from "./styles"
+import {AppContainer} from "./styles"
 
 function App() {
   return (
-    <div className="App">
-      <Title>Toinou Le Chevalier</Title>
+    <AppContainer>
+      <Header />
       <GlobalStyle />
       <AboutUs />
-    </div>
+    </AppContainer>
   );
 }
 

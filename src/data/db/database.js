@@ -25,7 +25,7 @@ const database = {
     },
     {
         title: "Mes collectifs",
-        details: "Membre du collectif d'artistes 'Le Fief'. Résident au salon de tatouage Rennais 'Carbone Quatorze'.",
+        details: "Membre du collectif d'artistes 'Le Fief' et résident au salon 'Carbone Quatorze'.",
         icone: "img/teamwork.svg",
     },
   ],

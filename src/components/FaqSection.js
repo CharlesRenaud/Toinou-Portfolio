@@ -1,10 +1,12 @@
 import React from "react"
+import styled from "styled-components"
+import { Faq } from "../styles"
 
 const FaqSection = (props) => {
     const questions = props.questions
 
     return(
-        <div>
+        <Faq>
             <h2>Des question ? <span>FAQ</span></h2>
             {questions.map((question, i) => {return(
             <div key={i} className="question">
@@ -13,10 +15,12 @@ const FaqSection = (props) => {
                     <p>{question.answer1}</p>
                     <p>{question.answer2}</p>
                 </div>
+                <div className="faq-line"></div>
             </div>
             )})}
-        </div>
+        </Faq>
     )
 }
+
 
 export default FaqSection

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
+export const AppContainer = styled.div`
 
+`;
 export const Title = styled.h1`
     font-family: "Cinzel";
     color: white;
@@ -11,6 +13,11 @@ export const Title = styled.h1`
     border-bottom: 3px solid #23d997;
     cursor:pointer;
     width: 40%;
+    @media only screen and (max-width:  800px) {
+    width:65%;  
+    font-size:1rem;
+    margin-left:1rem;
+    }
 `;
 
 export const About = styled.div`
@@ -20,12 +27,28 @@ export const About = styled.div`
     justify-content:space-between;
     padding: 5rem 10rem;
     color: white;
+    @media only screen and (max-width:  800px) {
+    display:block;
+    width:100%;
+    padding: 3rem 3rem;
+    h2{
+        margin: 0%;
+        padding:0%;
+        width: 100%;
+    }
+    }
 `;
 export const Description = styled.div`
     flex: 1;
     padding-right:5rem;
     h2{
         font-weight:lighter;
+    }
+    @media only screen and (max-width:  800px) {
+        padding:0%;
+    h2{
+        font-size:2rem;
+    }
     }
 
 `;
@@ -37,6 +60,13 @@ export const Image = styled.div`
         height: 60vh;
         margin-left:20%;
         object-fit:cover;
+    }
+    @media only screen and (max-width:  800px) {
+        img{
+            margin:0%;
+            width:100%;
+            padding-top:2rem;
+        }
     }
 `;
 export const Hide = styled.div`
@@ -54,14 +84,14 @@ export const Services = styled(About)`
     }
     @media only screen and (max-width: 1600px) {
         p{
-            width: 80%;
+            width: 100%;
         }
     }
 `;
 
 export const Cards = styled.div`
     display: flex;
-    flex-wrap:wrap;    
+    flex-wrap:wrap;   
 `;
 export const Card = styled.div`
     flex-basis: 20rem;
@@ -71,6 +101,9 @@ export const Card = styled.div`
         font-size:1.1rem;
     }
   }
+  @media only screen and (max-width:  800px) {
+      margin-left:1rem;
+    } 
 `;
 export const Icones = styled.div`
     display:flex;
@@ -83,5 +116,71 @@ export const Icones = styled.div`
         color: black;
         padding: 0.8rem;
         background:white;
+    }
+`;
+
+
+export const Faq = styled(About)`
+    display:block;
+    span{
+        display:block;
+    }
+    h2{
+        padding-bottom:2rem;
+        font-weight:lighter;   
+    } 
+    @media only screen and (max-width:  800px) {
+        h2{
+            font-size:2rem;
+        }
+    }
+    .faq-line{
+        background: #cccc;
+        height: 0.2rem;
+        margin: 2rem 0rem;
+        width: 100%;
+    }
+    .question{
+        padding: 3rem 0rem;
+        cursor: pointer;
+    }
+    .answer{
+        padding: 2rem 0rem;
+        p{
+            padding: 1rem 0rem;
+        }
+    }
+    @media only screen and (max-width: 1600px) {
+        p{
+            font-size:1.1rem;
+        }
+    }
+`;
+
+export const HeaderContainer = styled.div`
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+`;
+export const BurgerMenu = styled.div`
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    width: 85px;
+    padding:1.5rem;
+    margin-right:10%;
+    cursor:pointer;
+    @media only screen and (max-width: 800px) {
+       padding:0%;
+       width: 50px;
+       padding: 0.8rem;
+       margin-right:5%;
+
+    }
+    span{
+        display:flex;
+        width:100%;
+        height: 5px;
+        background-color:#23d997;
     }
 `;

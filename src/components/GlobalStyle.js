@@ -24,6 +24,9 @@ button {
         background-color: #23d997;
         color: white;
     }
+    @media only screen and (max-width:  800px) {
+      font-size:80%;
+    }
 }
     h2{
         font-weight:lighter;
@@ -33,7 +36,11 @@ button {
         color: white;
     }
     h4{
+        font-size:1.6rem;
         font-weight: bold;
+        @media only screen and (max-width:  800px) {
+        font-size:1.3rem
+    } 
     }
     span{
         color: #23d997;
@@ -48,6 +55,9 @@ button {
         color: #ccc;
         font-size: 1.4rem;
         line-height:150%;
+        @media only screen and (max-width:  800px) {
+        font-size:1.1rem
+    }
     }
 `;
 export default GlobalStyle;
