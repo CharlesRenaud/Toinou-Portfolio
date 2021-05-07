@@ -4,7 +4,7 @@ const database = {
   about: {
     name: 'Toinou Le Chevalier',
     aboutContent: "Tattoo / Illustration",
-    description: "Contact moi pour réaliser un projet perso' ou pour réserver un flash disponible dans ma gallerie.",
+    description: "Contact moi pour réaliser un projet perso' ou pour réserver un flash.",
     homeImage: '/img/home1.jpg',
   },
   services: [

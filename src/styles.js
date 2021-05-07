@@ -10,7 +10,9 @@ export const Title = styled.h1`
     font-size:2.5rem;
     margin-left:5rem;
     margin-top:2rem;
+    margin-bottom: 1rem;
     border-bottom: 3px solid #23d997;
+    z-index:99;
     cursor:pointer;
     width: 40%;
     @media only screen and (max-width:  800px) {
@@ -161,20 +163,28 @@ export const HeaderContainer = styled.div`
     display:flex;
     width:100%;
     justify-content: space-between;
+    background-color: #262525;
 `;
 export const BurgerMenu = styled.div`
+    z-index:99;
     display:flex;
     flex-direction:column;
     justify-content:space-around;
     width: 85px;
-    padding:1.5rem;
+    padding-top:1.7rem;
+    padding-bottom:1.7rem;
+    padding-left:1.2rem;
+    padding-right:1.2rem;
     margin-right:10%;
     cursor:pointer;
     @media only screen and (max-width: 800px) {
-       padding:0%;
        width: 50px;
-       padding: 0.8rem;
        margin-right:5%;
+       padding-top:1.2rem;
+       padding-bottom:1.2rem;
+       padding-left:0.7rem;
+       padding-right:0.7rem;
+
 
     }
     span{
